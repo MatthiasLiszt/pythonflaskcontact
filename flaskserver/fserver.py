@@ -11,7 +11,8 @@ def landingPage():
 @app.route('/sendMessage', methods=['GET'])
 def sendMessage():
     if request.method == 'GET':
-       return 'Message has been sent'
-
+       subject = request.args.get('subject', '')
+       msg='Message with the subject - '+subject+' - has been sent'
+       return msg
 
     
