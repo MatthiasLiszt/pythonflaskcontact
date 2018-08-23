@@ -1,6 +1,7 @@
 # Python Flask Contact Form 
 
 A python flask server which stores messages from a contact form in a database.
+As a simple database just SQLite is used.
 
 ## Installation
 
